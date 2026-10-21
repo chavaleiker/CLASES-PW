@@ -16,6 +16,7 @@ public class SaludoController: Controller
     [ValidateAntiForgeryToken]
     public IActionResult index(Persona persona)
     {
+        //validar el modelo
         if (!ModelState.IsValid)
         {
             return View(persona);
